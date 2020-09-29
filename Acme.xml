@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Acme</Name>
+  <Repository>neilpang/acme.sh</Repository>
+  <Registry>https://hub.docker.com/r/neilpang/acme.sh</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>&#x81EA;&#x52A8;&#x751F;&#x6210; letsencrypt &#x514D;&#x8D39;SSL&#x8BC1;&#x4E66;&#xD;
+acme.sh &#x5B9E;&#x73B0;&#x4E86; acme &#x534F;&#x8BAE;, &#x53EF;&#x4EE5;&#x4ECE; letsencrypt &#x751F;&#x6210;&#x514D;&#x8D39;&#x7684;&#x8BC1;&#x4E66;.</Overview>
+  <Category>Network:Other</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://letsencrypt.org/images/le-logo-twitter-noalpha.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1601378517</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#x81EA;&#x52A8;&#x751F;&#x6210; letsencrypt &#x514D;&#x8D39;SSL&#x8BC1;&#x4E66;&#xD;
+acme.sh &#x5B9E;&#x73B0;&#x4E86; acme &#x534F;&#x8BAE;, &#x53EF;&#x4EE5;&#x4ECE; letsencrypt &#x751F;&#x6210;&#x514D;&#x8D39;&#x7684;&#x8BC1;&#x4E66;.</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>99</HostPort>
+        <ContainerPort>99</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ssl/out</HostDir>
+      <ContainerDir>/acme.sh</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>lajiknight</Value>
+      <Name>FREEDNS_User</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>123456</Value>
+      <Name>FREEDNS_Password</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="SSL-Patch" Target="/acme.sh" Default="" Mode="rw" Description="&#x4FDD;&#x5B58;ssl&#x8BC1;&#x4E66;&#x7684;&#x4E3B;&#x673A;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ssl/out</Config>
+  <Config Name="FreeDNS_User" Target="FREEDNS_User" Default="" Mode="" Description="FREEDNS_User:lajknight" Type="Variable" Display="advanced" Required="true" Mask="false">lajiknight</Config>
+  <Config Name="FREEDNS_Password" Target="FREEDNS_Password" Default="" Mode="" Description="FREEDNS_Password" Type="Variable" Display="advanced" Required="true" Mask="true">123456</Config>
+  <Config Name="PUID" Target="99" Default="99" Mode="tcp" Description="PUID=99" Type="Port" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID=100" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+</Container>

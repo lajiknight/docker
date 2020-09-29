@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>FreenomAR</Name>
+  <Repository>rouroux/freenom-automatic-renewal</Repository>
+  <Registry>https://hub.docker.com/r/rouroux/freenom-automatic-renewal</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>freenom&#x514D;&#x8D39;&#x57DF;&#x540D;&#x81EA;&#x52A8;&#x7EED;&#x671F;</Overview>
+  <Category>Cloud: Tools: Network:Management Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQtC6Kxa795nkaz9boz67WFJzKFSiO3Ma7zFw&amp;amp;usqp=CAU</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1601379144</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>freenom&#x514D;&#x8D39;&#x57DF;&#x540D;&#x81EA;&#x52A8;&#x7EED;&#x671F;</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/freenom/config</HostDir>
+      <ContainerDir>/conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="conf" Target="/conf" Default="/mnt/user/appdata/freenom/config" Mode="rw" Description="&#x914D;&#x7F6E;&#x76EE;&#x5F55;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/freenom/config</Config>
+ <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+</Container>
