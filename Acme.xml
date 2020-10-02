@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project/>
+  <Project>https://github.com/acmesh-official/acme.sh</Project>
   <Overview>&#x81EA;&#x52A8;&#x751F;&#x6210; letsencrypt &#x514D;&#x8D39;SSL&#x8BC1;&#x4E66;&#xD;
 acme.sh &#x5B9E;&#x73B0;&#x4E86; acme &#x534F;&#x8BAE;, &#x53EF;&#x4EE5;&#x4ECE; letsencrypt &#x751F;&#x6210;&#x514D;&#x8D39;&#x7684;&#x8BC1;&#x4E66;.</Overview>
   <Category>Network:Other</Category>
@@ -18,7 +18,7 @@ acme.sh &#x5B9E;&#x73B0;&#x4E86; acme &#x534F;&#x8BAE;, &#x53EF;&#x4EE5;&#x4ECE;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1601378517</DateInstalled>
+  <DateInstalled>1601647525</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>&#x81EA;&#x52A8;&#x751F;&#x6210; letsencrypt &#x514D;&#x8D39;SSL&#x8BC1;&#x4E66;&#xD;
