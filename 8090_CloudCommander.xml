@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>CloudCommander</Name>
+  <Repository>coderaiser/cloudcmd</Repository>
+  <Registry>https://hub.docker.com/r/coderaiser/cloudcmd/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
+  <Project/>
+  <Overview>&#xD;
+[b]CloudCommander[/b] is a simple web file browser with a built in text editor and archive compress/extract abilities.[br/]&#xD;
+[br/]&#xD;
+[b]Instructions:[/b][br/]&#xD;
+Set Port to the port you want to be able to access from. Defaults to 8765[br/]&#xD;
+Set Mount Point to the directory you want to be able to access in the browser. Defaults to /mnt/user, all shares[br/]&#xD;
+	</Overview>
+  <Category>Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/cheesemarathon/cloudcmd.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/cloudcmdLogo.png</Icon>
+  <ExtraParams>-u 99:100</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1602169937</DateInstalled>
+  <DonateText>Buy Me a Coffee</DonateText>
+  <DonateLink>https://ko-fi.com/I2I0CW9G</DonateLink>
+  <Description>&#xD;
+[b]CloudCommander[/b] is a simple web file browser with a built in text editor and archive compress/extract abilities.[br/]&#xD;
+[br/]&#xD;
+[b]Instructions:[/b][br/]&#xD;
+Set Port to the port you want to be able to access from. Defaults to 8765[br/]&#xD;
+Set Mount Point to the directory you want to be able to access in the browser. Defaults to /mnt/user, all shares[br/]&#xD;
+	</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8090</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>//</HostDir>
+      <ContainerDir>/UNRAID</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/cloudcmd</HostDir>
+      <ContainerDir>/root</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>/ROOT</Value>
+      <Name>HOME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Mount Path" Target="/UNRAID" Default="" Mode="rw" Description="Container Path: /UNRAID" Type="Path" Display="always" Required="true" Mask="false">//</Config>
+  <Config Name="Port" Target="8000" Default="8090" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="true" Mask="false">8090</Config>
+  <Config Name="appdata" Target="/root" Default="" Mode="rw" Description="Container Path: /root" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/cloudcmd</Config>
+  <Config Name="HOME - Dont Change!" Target="HOME" Default="" Mode="" Description="Container Variable: HOME" Type="Variable" Display="advanced" Required="true" Mask="false">/ROOT</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID=99" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID=100" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+</Container>

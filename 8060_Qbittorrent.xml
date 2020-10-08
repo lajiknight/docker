@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>qbittorrent</Name>
+  <Repository>80x86/qbittorrent:4.2.5-focal-20200423-amd64-nova</Repository>
+  <Registry>https://hub.docker.com/r/80x86/qbittorrent/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/59191-support-linuxserverio-qbittorrent/</Support>
+  <Project>https://www.qbittorrent.org</Project>
+  <Overview>The qBittorrent project aims to provide an open-source software alternative to &#xB5;Torrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.&#xD;
+username: admin, password: adminadmin</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI>http://[IP]:[PORT:8060]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/qbittorrent.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/lajiknight/PIC/master/qbittorrent.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1602169620</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>The qBittorrent project aims to provide an open-source software alternative to &#xB5;Torrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.&#xD;
+username: admin, password: adminadmin</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8999</HostPort>
+        <ContainerPort>8999</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8999</HostPort>
+        <ContainerPort>8999</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8060</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/share/QBDOWN/</HostDir>
+      <ContainerDir>/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/share/QBDOWN/data</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/qbittorrent</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="8999" Default="8999" Mode="tcp" Description="BT_PORT Container Port: 8999" Type="Port" Display="always" Required="true" Mask="false">8999</Config>
+  <Config Name="Host Port 2" Target="8999" Default="8999" Mode="udp" Description="BT_PORT Container Port: 8999" Type="Port" Display="always" Required="true" Mask="false">8999</Config>
+  <Config Name="Host Port 3" Target="8080" Default="8080" Mode="tcp" Description="WEB_PORT Container Port: 8082" Type="Port" Display="always" Required="true" Mask="false">8060</Config>
+  <Config Name="Host Path 2" Target="/downloads" Default="" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/share/QBDOWN/</Config>
+  <Config Name="&#x6570;&#x636E;&#x8DEF;&#x5F84;" Target="/data" Default="/mnt/user/share/QBDOWN/data" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/share/QBDOWN/data</Config>
+  <Config Name="AppData &#x914D;&#x7F6E;&#x8DEF;&#x5F84;" Target="/config" Default="/mnt/user/appdata/qbittorrent" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/qbittorrent</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+</Container>
