@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.5"?>
 <Container version="2">
   <Name>qbittorrent</Name>
   <Repository>80x86/qbittorrent:4.3.5-alpine-3.13.5-amd64-full</Repository>
