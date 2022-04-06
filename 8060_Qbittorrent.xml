@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>qbittorrent</Name>
-  <Repository>80x86/qbittorrent:4.2.5-focal-20200423-amd64-nova</Repository>
+  <Repository>80x86/qbittorrent:4.3.5-alpine-3.13.5-amd64-full</Repository>
   <Registry>https://hub.docker.com/r/80x86/qbittorrent/</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -18,7 +18,7 @@ username: admin, password: adminadmin</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1602169620</DateInstalled>
+  <DateInstalled>1649232508</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>The qBittorrent project aims to provide an open-source software alternative to &#xB5;Torrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.&#xD;
@@ -27,8 +27,8 @@ username: admin, password: adminadmin</Description>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8999</HostPort>
-        <ContainerPort>8999</ContainerPort>
+        <HostPort>8060</HostPort>
+        <ContainerPort>8080</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
@@ -37,20 +37,20 @@ username: admin, password: adminadmin</Description>
         <Protocol>udp</Protocol>
       </Port>
       <Port>
-        <HostPort>8060</HostPort>
-        <ContainerPort>8080</ContainerPort>
+        <HostPort>8999</HostPort>
+        <ContainerPort>8999</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/share/QBDOWN/</HostDir>
+      <HostDir>/mnt/remotes/SWAP/09 Down/qbDOWN/DOWN</HostDir>
       <ContainerDir>/downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/share/QBDOWN/data</HostDir>
+      <HostDir>/mnt/remotes/SWAP/09 Down/qbDOWN/data</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -73,12 +73,12 @@ username: admin, password: adminadmin</Description>
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Host Port 1" Target="8999" Default="8999" Mode="tcp" Description="BT_PORT Container Port: 8999" Type="Port" Display="always" Required="true" Mask="false">8999</Config>
-  <Config Name="Host Port 2" Target="8999" Default="8999" Mode="udp" Description="BT_PORT Container Port: 8999" Type="Port" Display="always" Required="true" Mask="false">8999</Config>
-  <Config Name="Host Port 3" Target="8080" Default="8080" Mode="tcp" Description="WEB_PORT Container Port: 8082" Type="Port" Display="always" Required="true" Mask="false">8060</Config>
-  <Config Name="Host Path 2" Target="/downloads" Default="" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/share/QBDOWN/</Config>
-  <Config Name="&#x6570;&#x636E;&#x8DEF;&#x5F84;" Target="/data" Default="/mnt/user/share/QBDOWN/data" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/share/QBDOWN/data</Config>
-  <Config Name="AppData &#x914D;&#x7F6E;&#x8DEF;&#x5F84;" Target="/config" Default="/mnt/user/appdata/qbittorrent" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/qbittorrent</Config>
+  <Config Name="WEB_PORT" Target="8080" Default="8060" Mode="tcp" Description="WEB_PORT Container Port: 8082" Type="Port" Display="always" Required="true" Mask="false">8060</Config>
+  <Config Name="&#x4E0B;&#x8F7D;&#x76EE;&#x5F55;" Target="/downloads" Default="/mnt/remotes/SWAP/09 Down/" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/remotes/SWAP/09 Down/qbDOWN/DOWN</Config>
+  <Config Name="&#x6570;&#x636E;&#x8DEF;&#x5F84;" Target="/data" Default="/mnt/user/share/QBDOWN/data" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/remotes/SWAP/09 Down/qbDOWN/data</Config>
+  <Config Name="AppData &#x914D;&#x7F6E;&#x8DEF;&#x5F84;" Target="/config" Default="/mnt/user/appdata/qbittorrent" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/qbittorrent</Config>
   <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="BT_PORT UDP" Target="8999" Default="8999" Mode="udp" Description="BT_PORT Container Port: 8999" Type="Port" Display="advanced" Required="true" Mask="false">8999</Config>
+  <Config Name="BT_PORT" Target="8999" Default="8999" Mode="tcp" Description="BT_PORT Container Port: 8999" Type="Port" Display="advanced" Required="true" Mask="false">8999</Config>
 </Container>
