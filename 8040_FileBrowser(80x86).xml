@@ -3,37 +3,45 @@
   <Name>FileBrowser</Name>
   <Repository>80x86/filebrowser</Repository>
   <Registry>https://hub.docker.com/r/80x86/filebrowser</Registry>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Support>https://www.lxg2016.com/54202.html</Support>
   <Project>https://hub.docker.com/r/80x86/filebrowser</Project>
-  <Overview>&#xD;
-    &#x4F7F;&#x7528;&#x8352;&#x91CE;&#x65E0;&#x706F;&#x5927;&#x795E;&#x7684;&#x955C;&#x50CF;&#xFF0C;&#x5177;&#x4F53;&#x4F7F;&#x7528;&#x6559;&#x7A0B;&#x53EF;&#x8BBF;&#x95EE;https://www.lxg2016.com/54202.html&#x67E5;&#x770B;&#xD;
+  <Overview>&#x4E3A; amd64 &#x548C; arm64 &#x673A;&#x5668;&#x589E;&#x5F3A;&#x7684;&#x6587;&#x4EF6;&#x6D4F;&#x89C8;&#x5668; 80x86/filebrowser &#x62C9;&#x53D6;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xD;
+&#x8B66;&#x544A;&#xFF1A;latest&#x6807;&#x7B7E;&#x5DF2;&#x88AB;&#x5220;&#x9664; [2020-03-01]&#xD;
 &#x521D;&#x59CB;&#x5316;&#x7528;&#x6237;&#x540D;&#xFF1A; admin&#xD;
-&#x521D;&#x59CB;&#x5316;&#x5BC6;&#x7801;&#xFF1A; admmin&#xD;
-&#xD;
-&#x5DF2;&#x5F00;&#x542F;&#x786C;&#x89E3;</Overview>
-  <Category>Cloud: Network:Web Status:Stable</Category>
+&#x521D;&#x59CB;&#x5316;&#x5BC6;&#x7801;&#xFF1A;admin&#xD;
+&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x5F3A;&#x5927;&#x7684;&#x53C9;&#x5B50;filebrowser/filebrowser&#xFF01;&#xD;
+&#x4E3A; amd64 &#x548C; arm64 &#x673A;&#x5668;&#x589E;&#x5F3A;&#x7684;&#x6587;&#x4EF6;&#x6D4F;&#x89C8;&#x5668;&#xD;
+&#x4F7F;&#x7528;&#x8352;&#x91CE;&#x65E0;&#x706F;&#x5927;&#x795E;&#x7684;&#x955C;&#x50CF;&#xFF0C;&#x5177;&#x4F53;&#x4F7F;&#x7528;&#x6559;&#x7A0B;&#x53EF;&#x8BBF;&#x95EE;https://www.lxg2016.com/54202.html&#x67E5;</Overview>
+  <Category>Cloud: Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8082]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/maschhoff/docker/raw/master/filebrowser/35781395.png</Icon>
-  <ExtraParams>--mount type=tmpfs,destination=/tmp </ExtraParams>
+  <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1602169514</DateInstalled>
+  <DateInstalled>1649232352</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>&#xD;
-    &#x4F7F;&#x7528;&#x8352;&#x91CE;&#x65E0;&#x706F;&#x5927;&#x795E;&#x7684;&#x955C;&#x50CF;&#xFF0C;&#x5177;&#x4F53;&#x4F7F;&#x7528;&#x6559;&#x7A0B;&#x53EF;&#x8BBF;&#x95EE;https://www.lxg2016.com/54202.html&#x67E5;&#x770B;&#xD;
+  <Description>&#x4E3A; amd64 &#x548C; arm64 &#x673A;&#x5668;&#x589E;&#x5F3A;&#x7684;&#x6587;&#x4EF6;&#x6D4F;&#x89C8;&#x5668; 80x86/filebrowser &#x62C9;&#x53D6;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xD;
+&#x8B66;&#x544A;&#xFF1A;latest&#x6807;&#x7B7E;&#x5DF2;&#x88AB;&#x5220;&#x9664; [2020-03-01]&#xD;
 &#x521D;&#x59CB;&#x5316;&#x7528;&#x6237;&#x540D;&#xFF1A; admin&#xD;
-&#x521D;&#x59CB;&#x5316;&#x5BC6;&#x7801;&#xFF1A; admmin&#xD;
-&#xD;
-&#x5DF2;&#x5F00;&#x542F;&#x786C;&#x89E3;</Description>
+&#x521D;&#x59CB;&#x5316;&#x5BC6;&#x7801;&#xFF1A;admin&#xD;
+&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x5F3A;&#x5927;&#x7684;&#x53C9;&#x5B50;filebrowser/filebrowser&#xFF01;&#xD;
+&#x4E3A; amd64 &#x548C; arm64 &#x673A;&#x5668;&#x589E;&#x5F3A;&#x7684;&#x6587;&#x4EF6;&#x6D4F;&#x89C8;&#x5668;&#xD;
+&#x4F7F;&#x7528;&#x8352;&#x91CE;&#x65E0;&#x706F;&#x5927;&#x795E;&#x7684;&#x955C;&#x50CF;&#xFF0C;&#x5177;&#x4F53;&#x4F7F;&#x7528;&#x6559;&#x7A0B;&#x53EF;&#x8BBF;&#x95EE;https://www.lxg2016.com/54202.html&#x67E5;</Description>
   <Networking>
-    <Mode>host</Mode>
-    <Publish/>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8040</HostPort>
+        <ContainerPort>8082</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Data>
     <Volume>
@@ -68,31 +76,13 @@
       <Name>UMASK_SET</Name>
       <Mode/>
     </Variable>
-    <Variable>
-      <Value>8040</Value>
-      <Name>WEB_PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>99</Value>
-      <Name>PUID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>100</Value>
-      <Name>PGID</Name>
-      <Mode/>
-    </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Host Path 2" Target="/myfiles" Default="&#x60F3;&#x7BA1;&#x7406;&#x7684;&#x8DEF;&#x5F84;" Mode="rw" Description="Container Path: /myfiles" Type="Path" Display="always" Required="true" Mask="false">//</Config>
-  <Config Name="Key 1" Target="PUID" Default="0" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="Key 2" Target="PGID" Default="0" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="Key 3" Target="SSL" Default="on&#x6216;off" Mode="" Description="Container Variable: SSL" Type="Variable" Display="always" Required="false" Mask="false">off</Config>
-  <Config Name="Key 4" Target="UMASK_SET" Default="000" Mode="" Description="Container Variable: UMASK_SET" Type="Variable" Display="always" Required="false" Mask="false">000</Config>
-  <Config Name="Key 5" Target="WEB_PORT" Default="8040" Mode="" Description="Container Variable: WEB_PORT" Type="Variable" Display="always" Required="false" Mask="false">8040</Config>
-  <Config Name="AppData &#x914D;&#x7F6E;&#x8DEF;&#x5F84;" Target="/config" Default="/mnt/user/appdata/FileBrowser" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/FileBrowser</Config>
-  <Config Name="&#x663E;&#x5361;" Target="" Default="/dev/dri/renderD128" Mode="" Description="&#x786C;&#x89E3;&#x8BBE;&#x5907;" Type="Device" Display="advanced" Required="false" Mask="false">/dev/dri/renderD128</Config>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID=99" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID=100" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="WEBUI_PORT" Target="8082" Default="8040" Mode="tcp" Description="WEBUI PORT:8082" Type="Port" Display="always" Required="true" Mask="false">8040</Config>
+  <Config Name="&#x7BA1;&#x7406;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;" Target="/myfiles" Default="//" Mode="rw" Description="Container Path: /myfiles" Type="Path" Display="always" Required="true" Mask="false">//</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/FileBrowser" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/FileBrowser</Config>
+  <Config Name="PUID_Key" Target="PUID" Default="0" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="PGID_Key" Target="PGID" Default="0" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="SSL?" Target="SSL" Default="on&#x6216;off" Mode="" Description="Container Variable: SSL" Type="Variable" Display="advanced" Required="false" Mask="false">off</Config>
+  <Config Name="UMASK_SET" Target="UMASK_SET" Default="000" Mode="" Description="Container Variable: UMASK_SET" Type="Variable" Display="advanced" Required="false" Mask="false">000</Config>
 </Container>
