@@ -40,11 +40,11 @@ messense/aliyundrive-webdav &#x8BBE;&#x7F6E;&#x62C9;&#x53D6;&#x7684;&#x955C;&#x5
   <Category>Cloud: Downloaders:</Category>
   <WebUI>http://[IP]:[PORT:7000]</WebUI>
   <TemplateURL/>
-  <Icon>https://gw.alicdn.com/imgextra/i2/O1CN012zI3pB1XLS21rJ9Je_!!6000000002907-55-tps-108-24.svg</Icon>
+  <Icon>https://gw.alicdn.com/imgextra/i3/O1CN01aj9rdD1GS0E8io11t_!!6000000000620-73-tps-16-16.ico</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset>3,7</CPUset>
-  <DateInstalled>1650463006</DateInstalled>
+  <DateInstalled>1650464072</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>&#x963F;&#x91CC;&#x4E91;&#x76D8; WebDAV &#x670D;&#x52A1;&#xFF0C;&#x4E3B;&#x8981;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x4E3A;&#x914D;&#x5408;&#x652F;&#x6301; WebDAV &#x534F;&#x8BAE;&#x7684;&#x5BA2;&#x6237;&#x7AEF; App &#x5982; Infuse&#x3001;nPlayer &#x7B49;&#x5B9E;&#x73B0;&#x5728;&#x7535;&#x89C6;&#x4E0A;&#x76F4;&#x63A5;&#x89C2;&#x770B;&#x4E91;&#x76D8;&#x89C6;&#x9891;&#x5185;&#x5BB9;&#xFF0C; &#x652F;&#x6301;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x53D7;&#x9650;&#x4E8E; WebDAV &#x534F;&#x8BAE;&#x4E0D;&#x652F;&#x6301;&#x6587;&#x4EF6;&#x79D2;&#x4F20;&#x3002;&#xD;
@@ -94,7 +94,7 @@ messense/aliyundrive-webdav &#x8BBE;&#x7F6E;&#x62C9;&#x53D6;&#x7684;&#x955C;&#x5
   </Data>
   <Environment>
     <Variable>
-      <Value>62cc420ea778476e94e7da41b2e5b2d5</Value>
+      <Value/>
       <Name>REFRESH_TOKEN</Name>
       <Mode/>
     </Variable>
@@ -104,15 +104,15 @@ messense/aliyundrive-webdav &#x8BBE;&#x7F6E;&#x62C9;&#x53D6;&#x7684;&#x955C;&#x5
       <Mode/>
     </Variable>
     <Variable>
-      <Value>admin</Value>
+      <Value/>
       <Name>WEBDAV_AUTH_USER</Name>
       <Mode/>
     </Variable>
   </Environment>
   <Labels/>
   <Config Name="WEB UI port" Target="8080" Default="7000" Mode="tcp" Description="WEB UI&#x7AEF;&#x53E3;" Type="Port" Display="always" Required="true" Mask="false">7000</Config>
-  <Config Name="&#x5B58;&#x50A8;&#x76EE;&#x5F55;" Target="/etc/aliyundrive-webdav/" Default="/mnt/remotes/SWAP/09 Down/" Mode="rw" Description="&#x5BB9;&#x5668; Path: /etc/aliyundrive-webdav/" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="&#x963F;&#x91CC;&#x4E91;&#x76D8;&#x7684; token" Target="REFRESH_TOKEN" Default="" Mode="" Description="&#x8BBE;&#x7F6E;&#x963F;&#x91CC;&#x4E91;&#x76D8;&#x7684; token &#x9700;&#x8981;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x586B;&#x5199;.&#13;&#10;&#x901A;&#x8FC7;&#x8C37;&#x6B4C;&#x6D4F;&#x89C8;&#x5668;&#x6253;&#x5F00;&#x963F;&#x91CC;&#x4E91;&#x76D8;&#x5B98;&#x7F51;&#x5E76;&#x767B;&#x5F55;&#x7F51;&#x9875;&#x7248;&#xFF1A;https://www.aliyundrive.com/drive/&#13;&#10;1.&#x767B;&#x5F55;&#x963F;&#x91CC;&#x4E91;&#x76D8;&#xFF0C;&#x767B;&#x5F55;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x6309; F12&#x6253;&#x5F00;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#13;&#10;2.&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x9762;&#x677F;&#x5207;&#x6362;&#x81F3; &#x201C;&#x63A7;&#x5236;&#x53F0;&#x201D; &#xFF08;&#x672A;&#x6C49;&#x5316;&#x7684;&#x540D;&#x79F0;&#x4E3A;&#xFF1A;Consloe&#xFF09;&#xFF0C;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;&#13;&#10;JSON.parse(window.localStorage[" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="&#x5B58;&#x50A8;&#x76EE;&#x5F55;" Target="/etc/aliyundrive-webdav/" Default="/mnt/remotes/SWAP/09 Down/" Mode="rw" Description="&#x5BB9;&#x5668; Path: /etc/aliyundrive-webdav/" Type="Path" Display="always" Required="true" Mask="false">/mnt/remotes/SWAP/09 Down/</Config>
+  <Config Name="&#x963F;&#x91CC;&#x4E91;&#x76D8;&#x7684; token" Target="REFRESH_TOKEN" Default="" Mode="" Description="&#x8BBE;&#x7F6E;&#x963F;&#x91CC;&#x4E91;&#x76D8;&#x7684; token &#x9700;&#x8981;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x586B;&#x5199;.&#13;&#10;&#x901A;&#x8FC7;&#x8C37;&#x6B4C;&#x6D4F;&#x89C8;&#x5668;&#x6253;&#x5F00;&#x963F;&#x91CC;&#x4E91;&#x76D8;&#x5B98;&#x7F51;&#x5E76;&#x767B;&#x5F55;&#x7F51;&#x9875;&#x7248;&#xFF1A;https://www.aliyundrive.com/drive/&#13;&#10;1.&#x767B;&#x5F55;&#x963F;&#x91CC;&#x4E91;&#x76D8;&#xFF0C;&#x767B;&#x5F55;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x6309; F12&#x6253;&#x5F00;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#13;&#10;2.&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x9762;&#x677F;&#x5207;&#x6362;&#x81F3; &#x201C;&#x63A7;&#x5236;&#x53F0;&#x201D; &#xFF08;&#x672A;&#x6C49;&#x5316;&#x7684;&#x540D;&#x79F0;&#x4E3A;&#xFF1A;Consloe&#xFF09;&#xFF0C;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;&#13;&#10;JSON.parse(window.localStorage[" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="&#x8BBE;&#x7F6E;&#x767B;&#x5F55;&#x5BC6;&#x7801;" Target="WEBDAV_AUTH_PASSWORD" Default="123456" Mode="" Description="&#x8BBE;&#x7F6E;&#x767B;&#x5F55;&#x5BC6;&#x7801;" Type="Variable" Display="advanced" Required="true" Mask="true">123456</Config>
-  <Config Name="&#x8BBE;&#x7F6E;&#x767B;&#x5F55;&#x7528;&#x6237;&#x540D;" Target="WEBDAV_AUTH_USER" Default="admin" Mode="" Description="USER " Type="Variable" Display="advanced" Required="true" Mask="false">admin</Config>
+  <Config Name="&#x8BBE;&#x7F6E;&#x767B;&#x5F55;&#x7528;&#x6237;&#x540D;" Target="WEBDAV_AUTH_USER" Default="admin" Mode="" Description="USER " Type="Variable" Display="advanced" Required="true" Mask="false"/>
 </Container>
